@@ -1,4 +1,8 @@
- {{ $cSendId := 40 }}
+ {{/*
+	Recommended trigger: Regex trigger with trigger `^rpg\s+`.
+ */}}
+
+{{ $cSendId := Your Number scheduleUniqueCC on Custom Command }}
  
  {{ $donatorCdMultiplier := 1.0 }}
  {{ $marriedCdMultiplier := 1.0 }}
