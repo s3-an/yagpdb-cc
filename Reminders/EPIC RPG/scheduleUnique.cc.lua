@@ -1,7 +1,7 @@
 {{/*
         Trigger for Epic RPG Reminder
 
-	Recommended trigger: Recomended Trigger `none`
+	Recommended trigger: None Trigger
 
 
 */}}
