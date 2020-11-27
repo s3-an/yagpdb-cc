@@ -69,9 +69,11 @@
          {{ $notifMsg = (printf "**HUNT** %s" .User.Mention)}}
          {{ $cmdCd = $cdHunt }}
      {{ if (reFind `^hunt t(ogether)?\s*` $args) }}
-         {{ $notifMsg = (printf "**%s** %s" (upper $args) .User.Mention) }}
+         {{ $notifMsg = (printf "**HUNT TOGETHER** %s" .User.Mention) }}
          {{ $cmdCd = $cdHuntTogether }}
      {{ else if (reFind `^hunt h(ardmode|t)?\s*` $args) }}
+         {{ $notifMsg = (printf "**HUNT HARDMODE** %s" .User.Mention) }}
+         {{ $cmdCd = $cdHunt }}
      {{ end }}
  
  {{/* WORK */}}
